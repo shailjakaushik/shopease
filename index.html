@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>   
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShopEase</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Navbar -->
+<nav>
+    <h1>ShopEase</h1>
+
+    <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#products">Products</a></li>
+
+        <li>Cart (<span id="cart-count">0</span>)</li>
+        <li>Wishlist ❤️ (<span id="wish-count">0</span>)</li>
+
+        <li>
+            <label class="switch">
+                <input type="checkbox" id="darkModeBtn">
+                <span class="slider"></span>
+            </label>
+        </li>
+    </ul>
+</nav>
+
+<!-- Hero -->
+<section class="hero">
+    <h2>Summer Sale 50% Off</h2>
+    <p>Best Deals on Trending Products</p>
+    <button id="shopNowBtn">🛒 Shop Now</button>
+</section>
+
+<!-- Search -->
+<section class="search-section">
+    <input type="text" placeholder="Search products..." id="search">
+    <p id="noProductMsg" style="display:none;">No products found</p>
+</section>
+
+<!-- Products -->
+<section id="products">
+
+    <div class="product">
+        <img src="images/headphone.jpg">
+        <h3>Wireless Headphone</h3>
+        <p>₹1999</p>
+        <button class="cart-btn">Add to Cart</button>
+        <button class="wish-btn">❤️ Wishlist</button>
+    </div>
+
+    <div class="product">
+        <img src="images/shoes.jpg">
+        <h3>Sports Shoes</h3>
+        <p>₹2499</p>
+        <button class="cart-btn">Add to Cart</button>
+        <button class="wish-btn">❤️ Wishlist</button>
+    </div>
+
+    <div class="product">
+        <img src="images/watch.jpg">
+        <h3>Smart Watch</h3>
+        <p>₹2999</p>
+        <button class="cart-btn">Add to Cart</button>
+        <button class="wish-btn">❤️ Wishlist</button>
+    </div>
+
+    <div class="product">
+        <img src="images/tshirt.jpg">
+        <h3>Casual T-shirt</h3>
+        <p>₹799</p>
+        <button class="cart-btn">Add to Cart</button>
+        <button class="wish-btn">❤️ Wishlist</button>
+    </div>
+
+    <div class="product">
+        <img src="images/bag.jpg">
+        <h3>Laptop Bag</h3>
+        <p>₹1499</p>
+        <button class="cart-btn">Add to Cart</button>
+        <button class="wish-btn">❤️ Wishlist</button>
+    </div>
+
+    <div class="product">
+        <img src="images/mobile.jpg">
+        <h3>Smartphone</h3>
+        <p>₹14999</p>
+        <button class="cart-btn">Add to Cart</button>
+        <button class="wish-btn">❤️ Wishlist</button>
+    </div>
+
+</section>
+
+<footer>
+    <p>©️ 2026 ShopEase | Created by Shailja Kaushik</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

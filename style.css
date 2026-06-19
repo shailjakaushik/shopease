@@ -1,0 +1,193 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body{
+    background: whitesmoke;
+}
+
+/* NAV */
+nav{
+    background: black;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+}
+
+nav ul{
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+nav a{
+    color: white;
+    text-decoration: none;
+}
+/* HERO */
+.hero{
+    height: 450px;
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.7)),
+    url("images/banner.jpg");
+
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.hero h2{
+    font-size: 4rem;
+}
+
+.hero p{
+    font-size: 1.3rem;
+    margin-bottom: 15px;
+}
+
+.hero button{
+    margin-top: 20px;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 30px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/* Search */
+.search-section{
+    text-align: center;
+    margin: 20px;
+}
+
+#search{
+    width: 300px;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+/* PRODUCTS */
+#products{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.product{
+    background: #e4e4e4;
+    padding: 15px;
+    text-align: center;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.product:hover{
+    transform: translateY(-5px);
+}
+
+.product img{
+    width: 100%;
+    height: 220px;
+    object-fit: contain;
+    background: white;
+}
+
+/* BUTTONS */
+.cart-btn{
+    margin-top: 8px;
+    padding: 8px 12px;
+    background: black;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.wish-btn{
+    margin-top: 8px;
+    padding: 8px 12px;
+    background: #ff4d6d;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+/* DARK MODE (FIXED) */
+.dark-mode{
+    background: #121212;
+    color: white;
+}
+
+.dark-mode .product{
+    background: #1e1e1e;
+}
+
+.product{
+    transition: 0.3s;
+}
+
+.product:hover{
+    transform: translateY(-5px);
+}
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 50px;
+    height: 25px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    border-radius: 25px;
+    transition: 0.4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 19px;
+    width: 19px;
+    left: 3px;
+    bottom: 3px;
+    background-color: white;
+    border-radius: 50%;
+    transition: 0.4s;
+}
+
+input:checked + .slider {
+    background-color: #4f46e5;
+}
+
+input:checked + .slider:before {
+    transform: translateX(25px);
+}
+
+footer{
+    background: black;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
