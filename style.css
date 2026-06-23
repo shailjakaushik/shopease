@@ -1,4 +1,4 @@
-{
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -183,6 +183,24 @@ input:checked + .slider {
 
 input:checked + .slider:before {
     transform: translateX(25px);
+}
+
+@media(max-width:768px){
+
+    nav{
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    nav ul{
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    nav h1{
+        margin-bottom: 10px;
+    }
 }
 
 footer{
